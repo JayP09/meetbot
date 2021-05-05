@@ -6,7 +6,6 @@
         "matches": [
             "https://meet.google.com/*"
         ],
-        "js": ["content.js"]
     }],
     "background": {
         "scripts": ["background.js"]
@@ -14,5 +13,6 @@
     "browser_action": {
         "default_popup": "index.html",
         "default_title": "html"
+        
     }
 }
