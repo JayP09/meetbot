@@ -3,7 +3,10 @@ setInterval(() => {
     links = document.querySelector('.z38b6.CnDs7d.hPqowe').innerText.split("\n");
     for (link of links) {
         if (is_url(link)) {
-            chrome.tabs.sendMessage(tab.id, link);
+            var linkData = {
+                link: link,
+            }
+            chrome.tabs.sendMessage(tab.id, linkData);
         }
     }
 }, 20000)
