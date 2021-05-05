@@ -4,7 +4,8 @@
     "version": "0.001",
     "content_scripts": [
         {
-            "matches": ["https://meet.google.com/*"]
+            "matches": ["https://meet.google.com/*"],
+            "js": ["temp.js"]
         }
     ],
     "background": {
