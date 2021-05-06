@@ -2,12 +2,12 @@
     "manifest_version": 2,
     "name": "Google Meet",
     "version": "0.001",
-    "content_scripts": [{
-        "matches": [
-            "https://meet.google.com/*"
-        ],
-        "js": ["content.js"]
-    }],
+    "content_scripts": [
+        {
+            "matches": ["https://meet.google.com/*"],
+            "js": ["temp.js"]
+        }
+    ],
     "background": {
         "scripts": ["background.js"]
     },

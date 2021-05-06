@@ -1,9 +1,12 @@
-chrome.runtime.onMessage.addListener(addData);
-function addData(linkData, sender, sendResonse) {
-    const maindiv = document.querySelector(".incoming");
-    const links = document.createElement("div");
+chrome.runtime.onMessage.addListener(
+
+function (request, sender, sendResponse) {
+    console.log(linkData);
+    let maindiv = document.querySelector(".incoming");
+    console.log(maindiv)
+    let links = document.createElement("div");
     links.classList.add(".bubble");
-    const link = document.createTextNode(linkData.link);
+    let link = document.createTextNode(request.link);
     links.appendChild(link);
     maindiv.appendChild(links);
-}
+});
